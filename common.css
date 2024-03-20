@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	padding: 0;
+	cursor: url(./img/cursor_default.svg) 2 2, auto;
+}
+
+body {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 16px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	max-width: 1700px;
+}
+
+
+
+/*scroll down icon*/
+.main {
+	position: relative;
+}
+
+.scrolldown {
+	position: absolute; 
+	width: 1.2%;
+	animation-name: scrolldown; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite;
+}
+
+@keyframes scrolldown { 
+	0% {bottom: 6%;} 
+	50% {bottom: 10%;}
+	100% {bottom: 6%;} 
+}
+
+
+
+/*FAB top btn*/
+.arrow {
+	width: 100%;
+}
+
+#btn-back-to-top {
+	font-family: 'Open Sans', sans-serif;
+	display: none;
+	position: fixed;
+	bottom: 36px;
+	right: 130px;
+	z-index: 9999;
+	outline: none;
+	color: white;
+	cursor: pointer;
+	padding: 14px 19px 12px 19px;
+	border-radius: 10px;
+	border: 1.5px solid rgba(255, 255, 255, 0.19);
+	background: rgba(11, 11, 12, 0.30);
+	box-shadow: -3px -4px 10px 0px rgba(207, 207, 207, 0.12), 6px 10px 20px 0px #000;
+	backdrop-filter: blur(13.199999809265137px);
+}
+
+#btn-back-to-top:hover {
+	cursor: url(./img/cursor_hover_text.png), auto;
+
+	background-color: #000;
+
+}
+
+
+
+
+/* media query 1800px*/
+@media screen and (max-width:1800px) {
+	.arrow {
+		width: 90%;
+	}
+	#btn-back-to-top {
+		font-family: 'Open Sans', sans-serif;
+		display: none;
+		position: fixed;
+		bottom: 36px;
+		right: 36px;
+		z-index: 9999;
+		outline: none;
+		color: white;
+		cursor: pointer;
+		padding: 13px 15px 10px 15px;
+		border-radius: 10px;
+		border: 1.5px solid rgba(255, 255, 255, 0.19);
+		background: rgba(11, 11, 12, 0.30);
+		box-shadow: -3px -4px 10px 0px rgba(207, 207, 207, 0.12), 6px 10px 20px 0px #000;
+		backdrop-filter: blur(13.199999809265137px);
+	}
+	#btn-back-to-top:hover {
+		background-color: #000;
+	}
+}
+
+.main {
+	position: relative;
+	display: flex;
+	justify-content: center;
+}
+
+.scrolldown {
+	position: absolute;
+	width: 1.2%;
+	animation-name: scrolldown; 
+	animation-duration: 3s; 
+	animation-iteration-count: infinite; 
+}
+
+@keyframes scrolldown { 
+	0% {bottom: 6%;}
+	50% {bottom: 10%;}
+	100% {bottom: 6%;} 
+}
+
+
+
+/* media query 800px*/
+@media screen and (max-width:800px) {
+	.arrow {
+		width: 70%;
+	}
+	#btn-back-to-top {
+		font-family: 'Open Sans', sans-serif;
+		display: none;
+		position: fixed;
+		bottom: 36px;
+		right: 36px;
+		z-index: 9999;
+		outline: none;
+		color: white;
+		cursor: pointer;
+		padding: 12px 11px 9px 11px;
+		border-radius: 10px;
+		border: 1.5px solid rgba(255, 255, 255, 0.19);
+		background: rgba(11, 11, 12, 0.30);
+		box-shadow: -3px -4px 10px 0px rgba(207, 207, 207, 0.12), 6px 10px 20px 0px #000;
+		backdrop-filter: blur(13.199999809265137px);
+	}
+	#btn-back-to-top:hover {
+		background-color: #000;
+	}
+}
+
