@@ -22,3 +22,23 @@ function backToTop() {
     });
   }
 }
+
+//blur cousor: 마우스 이동 시 위치값을 div에 전달하여 따라다님
+// const cursor = document.querySelector('#cursor');
+
+// let lastPageX = 0, lastPageY = 0;
+
+// const animateCursor = (e) => {
+//     lastPageX = e.pageX;
+//     lastPageY = e.pageY;
+// }
+
+const updateCursor = () => {
+    requestAnimationFrame(updateCursor);
+    //커서 크기의 절반 값을 감산하여 커서 중심을 마우스 포인터 위치에 맞춤
+    cursor.style.left = `${lastPageX - cursor.offsetWidth / 2}px`;
+    cursor.style.top = `${lastPageY - cursor.offsetHeight / 2}px`;
+}
+
+window.addEventListener('mousemove', animateCursor);
+updateCursor(); // 커서 업데이트 시작
