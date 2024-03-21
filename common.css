@@ -1,7 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
-	cursor: url(./img/cursor_default.svg) 2 2, auto;
+	/*cursor: url(./img/cursor_default.svg) 2 2, auto;*/
 }
 
 body {
@@ -67,8 +67,7 @@ img {
 
 #btn-back-to-top:hover {
 	cursor: url(./img/cursor_hover_text.png), auto;
-
-	background-color: #000;
+	background-color: #1A1A1C;
 
 }
 
@@ -98,7 +97,7 @@ img {
 		backdrop-filter: blur(13.199999809265137px);
 	}
 	#btn-back-to-top:hover {
-		background-color: #000;
+		background-color: #1A1A1C;
 	}
 }
 
@@ -147,7 +146,7 @@ img {
 		backdrop-filter: blur(13.199999809265137px);
 	}
 	#btn-back-to-top:hover {
-		background-color: #000;
+		background-color: #1A1A1C;
 	}
 }
 
